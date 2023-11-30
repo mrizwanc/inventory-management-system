@@ -4,6 +4,13 @@
             <h1>Welcome to Your Inventory Management System</h1>
             <a href="/add" class="cta-button">Create New Entry</a>
         </section>
+
+        @if(session()->has('sucess'))
+    <div class="alert alert-success">
+        {{ session()->get('sucess') }}
+    </div>
+@endif
+
         @if ($errors->any())
     <div class="alert alert-danger">
         <ul>

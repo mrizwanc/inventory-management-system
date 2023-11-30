@@ -3,6 +3,13 @@
         
 
     <section class="add">
+    @if(session()->has('sucess'))
+    <div class="alert alert-success">
+        {{ session()->get('sucess') }}
+    </div>
+@endif
+
+
             <!-- Add page content -->
             <h2>Edit Product</h2>
             <form class="product-form" method="POST">

@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('/css/style.css')}}">
     <title>CRUD System Home</title>
+    <style>
+        .alert {
+            padding: 10px;
+            margin: 10px;
+        }
+        .alert-success{
+            color: green;
+        }
+        .alert-danger{
+            color: red;
+        }
+    </style>
 </head>
 <body>
 <header>
